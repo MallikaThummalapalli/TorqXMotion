@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Products — TorqX Motion</title>
+<meta name="description" content="Browse the full TorqX Motion actuator range — Comfort, Industrial, Titan, Solar, Axis, Fluid and Elevate series — with detailed specifications, application scenarios and downloadable datasheets."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --navy:#163B63;
+  --navy-dark:#0f2c4d;
+  --ink:#0d1b2a;
+  --slate:#6b7280;
+  --border:#e5e7eb;
+  --bg-soft:#f8fafc;
+  --ease:cubic-bezier(.4,0,.2,1);
+  --shadow-sm:0 2px 8px rgba(13,27,42,.05);
+  --shadow-md:0 10px 28px rgba(13,27,42,.08);
+  --shadow-lg:0 24px 56px rgba(13,27,42,.14);
+  --shadow-navy:0 16px 36px rgba(22,59,99,.16);
+  --r-sm:0px;
+  --r-md:0px;
+  --r-lg:0px;
+}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:#fff;color:#111827;line-height:1.6;font-size:16px;zoom:.9}
+h1,h2,h3,.section-h2,.fam-hero h1,.pd-name{font-family:'Inter',sans-serif}
+a{text-decoration:none;color:inherit}
+ul{list-style:none}
+img{max-width:100%;display:block}
+
+/* ─── NAV (shared) ───────────────────────── */
+.topbar{background:#0f2c4d;padding:8px 48px;display:flex;justify-content:space-between;align-items:center}
+.topbar span{font-size:12px;color:rgba(255,255,255,.65);letter-spacing:.3px}
+.topbar-links{display:flex;gap:20px}
+.topbar-links a{font-size:12px;color:rgba(255,255,255,.55)}
+.topbar-links a:hover{color:#fff}
+nav{background:#fff;border-bottom:1px solid var(--border);padding:0 56px;height:76px;display:flex;align-items:center;justify-content:flex-start;gap:48px;position:sticky;top:0;z-index:100;transition:box-shadow .3s var(--ease),height .3s var(--ease)}
+nav.scrolled{height:66px;box-shadow:0 4px 32px rgba(13,27,42,.10)}
+.logo{display:flex;align-items:center;gap:10px}
+.torqx-wordmark{display:flex;align-items:flex-start;font-family:'Open Sans',sans-serif;font-weight:800;line-height:1;letter-spacing:-.5px}
+.torqx-wordmark .tq-black{color:#0d0d0d}
+.torqx-wordmark .tq-x{color:var(--navy)}
+.torqx-wordmark .tq-tm{font-family:'Inter',sans-serif;font-weight:700;font-size:.28em;letter-spacing:0;margin-left:1px;align-self:flex-start;position:relative;top:-.1em}
+nav .torqx-wordmark{font-size:26px}
+.nav-menu{display:flex;gap:34px;margin-left:auto}
+.nav-menu a{font-size:14px;font-weight:500;color:#374151;display:flex;align-items:center;gap:5px;position:relative;padding:4px 0}
+.nav-menu a::after{content:'';position:absolute;left:0;right:0;bottom:-2px;height:2px;background:var(--navy);transform:scaleX(0);transform-origin:left;transition:transform .2s var(--ease)}
+.nav-menu a:hover{color:var(--navy)}
+.nav-menu a:hover::after,.nav-menu a.active::after{transform:scaleX(1)}
+.nav-menu a.active{color:var(--navy)}
+.nav-item-dropdown{position:relative}
+.nav-item-dropdown>a{cursor:pointer}
+.nav-caret{width:8px;height:8px;border-right:1.6px solid #374151;border-bottom:1.6px solid #374151;transform:rotate(45deg);margin-left:2px;transition:transform .2s var(--ease),border-color .2s var(--ease),margin .2s var(--ease)}
+.nav-item-dropdown:hover .nav-caret{border-color:var(--navy);transform:rotate(225deg);margin-top:4px}
+.dropdown-panel{position:absolute;top:100%;left:50%;transform:translateX(-50%) translateY(8px);width:250px;background:#fff;border:1px solid var(--border);border-radius:0px;box-shadow:var(--shadow-lg,0 24px 56px rgba(13,27,42,.14));padding:10px;opacity:0;visibility:hidden;transition:opacity .2s var(--ease),transform .2s var(--ease),visibility .2s;display:flex;flex-direction:column;gap:2px;z-index:200}
+.nav-item-dropdown:hover .dropdown-panel{opacity:1;visibility:visible;transform:translateX(-50%) translateY(4px)}
+.dropdown-panel a{display:flex;align-items:center;padding:11px 12px;border-radius:0px;transition:background .15s var(--ease);font-weight:500}
+.dropdown-panel a::after{content:none}
+.dropdown-panel a:hover{background:var(--bg-soft)}
+.dropdown-series-name{font-size:13.5px;font-weight:700;color:#111827}
+.dropdown-series-tag{display:none}
+.nav-right{display:flex;align-items:center;gap:12px}
+.btn-ghost{font-size:13px;font-weight:500;color:#374151;background:none;border:none;cursor:pointer;padding:10px 16px;border-radius:0px;transition:background .2s var(--ease),color .2s var(--ease)}
+.btn-ghost:hover{background:#f3f4f6;color:var(--navy)}
+.btn-primary{font-size:13px;font-weight:600;color:#fff;background:var(--navy);border:none;border-radius:0px;padding:11px 22px;cursor:pointer;display:flex;align-items:center;gap:6px;transition:background .25s var(--ease),transform .25s var(--ease),box-shadow .25s var(--ease);box-shadow:0 1px 2px rgba(13,27,42,.1)}
+.btn-primary:hover{background:var(--navy-dark);transform:translateY(-1px);box-shadow:0 10px 22px rgba(22,59,99,.24)}
+
+/* ─── BREADCRUMB ──────────────────────────── */
+.breadcrumb{padding:18px 64px 0;font-size:13px;color:rgba(255,255,255,.5);display:flex;align-items:center;gap:8px;flex-wrap:wrap;background:var(--navy-dark)}
+.breadcrumb a{color:rgba(255,255,255,.5);transition:color .2s var(--ease)}
+.breadcrumb a:hover{color:rgba(255,255,255,.9)}
+.breadcrumb .sep{opacity:.35}
+.breadcrumb .current{color:rgba(255,255,255,.85);font-weight:600}
+
+/* ─── PAGE HEAD (dark hero) ───────────────── */
+.page-head{padding:76px 64px 84px;background:#163b63;position:relative;overflow:hidden}
+.page-head::before{content:none}
+.page-head::after{content:none}
+.page-tag{
+  font-size:11px;font-weight:800;letter-spacing:2.2px;text-transform:uppercase;
+  color:#9fc0e6;
+  margin-bottom:20px;
+  display:inline-flex;align-items:center;gap:10px;
+  position:relative;
+}
+.page-tag::before{content:'';display:inline-block;width:24px;height:2px;background:#9fc0e6;border-radius:0px}
+.page-h1{font-size:clamp(36px,4.2vw,54px);font-weight:800;letter-spacing:-1.4px;color:#fff;margin-bottom:16px;line-height:1.08;max-width:720px;position:relative}
+.page-sub{font-size:15.5px;color:rgba(255,255,255,.62);line-height:1.8;max-width:640px;position:relative}
+
+/* ─── HOME: FAMILY GRID ───────────────────── */
+/* ─── HOME: FAMILY GRID ───────────────────── */
+.fam-section{padding:64px 64px 120px;background:#fff}
+.fam-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:26px}
+.fam-card{
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:0px;
+  overflow:hidden;
+  display:flex;flex-direction:column;
+  transition:border-color .3s var(--ease),box-shadow .4s var(--ease),transform .4s var(--ease);
+}
+.fam-card:hover{border-color:var(--navy);box-shadow:var(--shadow-lg);transform:translateY(-6px)}
+.fam-media{
+  height:230px;
+  background:#fff;
+  border-bottom:1px solid var(--border);
+  display:flex;align-items:center;justify-content:center;
+  position:relative;overflow:hidden;
+  padding:26px;
+}
+.fam-media svg{width:64px;height:64px;flex-shrink:0}
+.fam-media img{
+  max-width:70%;
+  max-height:70%;
+  width:auto;
+  height:auto;
+  object-fit:contain;
+  display:block;
+  transition:transform .5s var(--ease);
+}
+.fam-card:hover .fam-media img{transform:scale(1.08)}
+.fam-badge{
+  position:absolute;top:14px;left:14px;
+  font-size:9.5px;font-weight:800;letter-spacing:.9px;text-transform:uppercase;
+  color:var(--navy);background:#fff;
+  border:1px solid rgba(0,0,0,.12);border-radius:0px;padding:5px 11px;
+  backdrop-filter:blur(4px);box-shadow:var(--shadow-sm);
+}
+.fam-body,.model-body,.app-card-body,.appscn-body,.feat-card,.related-card{position:relative}
+.fam-body{padding:26px 26px 24px;display:flex;flex-direction:column;flex:1}
+.model-body{padding:24px 24px 22px;display:flex;flex-direction:column;flex:1}
+.app-card-body{padding:14px 10px 16px}
+.appscn-body{display:flex;align-items:center;gap:12px;padding:16px 18px}
+
+.fam-title{font-size:17px;font-weight:800;color:var(--ink);margin-top:12px;margin-bottom:7px;letter-spacing:-.3px}
+.fam-desc{font-size:14px;color:var(--slate);line-height:1.75;margin-bottom:18px;flex:1}
+.fam-meta{font-size:10.5px;color:rgba(0,0,0,.65);font-weight:700;letter-spacing:.4px;margin-bottom:6px;text-transform:uppercase}
+.fam-apps{font-size:13px;color:rgba(0,0,0,.65);margin-bottom:22px;line-height:1.65}
+.fam-apps strong{color:#000;font-weight:600}
+.fam-cta{
+  font-size:13px;font-weight:700;color:var(--navy);
+  border:1.5px solid rgba(0,0,0,.12);border-radius:0px;
+  padding:12px 16px;text-align:center;
+  transition:background .3s var(--ease),border-color .3s var(--ease),color .3s var(--ease),box-shadow .3s var(--ease);
+  margin-top:auto;
+}
+.fam-card:hover .fam-cta{background:var(--navy);border-color:var(--navy);color:#fff;box-shadow:var(--shadow-navy)}
+
+/* ─── FAMILY PAGE (model grid) ────────────── */
+.fam-layout{padding:40px 64px 110px;max-width:1400px;margin:0 auto}
+.back-link{display:inline-flex;align-items:center;gap:8px;font-size:13.5px;font-weight:700;color:var(--navy);margin-bottom:28px;transition:gap .25s var(--ease)}
+.back-link:hover{gap:12px}
+.back-link svg{width:15px;height:15px}
+
+/* Model cards reuse the fam-card visual language for a consistent drill-down feel */
+.model-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.model-card{
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:0px;
+  overflow:hidden;
+  display:flex;flex-direction:column;
+  transition:border-color .3s var(--ease),box-shadow .4s var(--ease),transform .4s var(--ease);
+}
+.model-card:hover{border-color:transparent;box-shadow:var(--shadow-lg);transform:translateY(-6px)}
+.model-media{
+  height:210px;
+  background:#fff;
+  border-bottom:1px solid var(--border);
+  display:flex;align-items:center;justify-content:center;
+  position:relative;overflow:hidden;
+  padding:26px;
+}
+.model-media img{max-width:70%;max-height:70%;width:auto;height:auto;object-fit:contain;display:block;transition:transform .5s var(--ease);mix-blend-mode:normal}
+.model-card:hover .model-media img{transform:scale(1.08)}
+.model-media svg{width:60px;height:60px}
+.model-body{padding:24px 24px 22px;display:flex;flex-direction:column;flex:1}
+.model-tag{font-size:10.5px;font-weight:800;letter-spacing:.9px;text-transform:uppercase;color:var(--navy);margin-bottom:9px}
+.model-title{font-size:17px;font-weight:800;color:var(--ink);margin-bottom:8px;letter-spacing:-.3px}
+.model-desc{font-size:14px;color:var(--slate);line-height:1.75;margin-bottom:20px;flex:1}
+.model-cta{
+  font-size:13px;font-weight:700;color:var(--navy);
+  border:1.5px solid #d1dce9;border-radius:0px;
+  padding:12px 16px;text-align:center;
+  transition:background .3s var(--ease),border-color .3s var(--ease),color .3s var(--ease),box-shadow .3s var(--ease);
+  margin-top:auto;
+}
+.model-card:hover .model-cta{background:var(--navy);border-color:var(--navy);color:#fff;box-shadow:var(--shadow-navy)}
+.model-body .stroke-tag{margin-bottom:14px}
+
+/* ─── MODEL DETAIL PAGE ───────────────────── */
+.pd-panel{max-width:1180px;margin:0 auto}
+.pd-top{display:grid;grid-template-columns:1fr 1fr;gap:56px;margin-bottom:68px}
+.pd-gallery-main{height:440px;border:1px solid var(--border);border-radius:0px;background:#fff;display:flex;align-items:center;justify-content:center;overflow:hidden;cursor:zoom-in;transition:border-color .35s var(--ease),box-shadow .4s var(--ease);position:relative}
+.pd-gallery-main::after{content:'';position:absolute;inset:0;box-shadow:inset 0 0 0 1px rgba(13,27,42,.03);border-radius:0px;pointer-events:none}
+.pd-gallery-main svg{width:130px;height:130px;transition:transform .5s var(--ease)}
+.pd-gallery-main img{width:100%;height:100%;object-fit:contain;padding:40px;transition:transform .5s var(--ease)}
+.pd-gallery-main:hover{border-color:#c7d9ee;box-shadow:var(--shadow-lg)}
+.pd-gallery-main:hover svg,.pd-gallery-main:hover img{transform:scale(1.06)}
+.product-figure{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;margin:0}
+.product-figure img{flex:1;min-height:0;padding:40px 40px 14px}
+.product-caption{font-size:12.5px;font-weight:600;letter-spacing:.2px;color:var(--slate);text-align:center;padding:0 20px 18px;flex-shrink:0}
+
+.pd-tag{font-size:12px;font-weight:800;letter-spacing:1.4px;text-transform:uppercase;color:var(--navy);margin-bottom:12px;display:inline-flex;align-items:center;gap:9px}
+.pd-tag::before{content:'';width:20px;height:2px;background:var(--navy);border-radius:0px}
+.pd-name{font-size:clamp(28px,2.6vw,36px);font-weight:800;letter-spacing:-.8px;color:var(--ink);margin-bottom:12px;line-height:1.12}
+.pd-short{font-size:17px;color:var(--slate);line-height:1.75;margin-bottom:26px}
+.pd-list{display:flex;flex-direction:column;gap:13px;margin-bottom:28px;padding-top:24px;border-top:1px solid var(--border)}
+.pd-list li{font-size:16px;color:#16243a;line-height:1.6;position:relative;padding-left:19px}
+.pd-list li::before{content:'';position:absolute;left:0;top:.7em;width:6px;height:6px;border-radius:50%;background:var(--navy)}
+.pd-line-title{font-weight:800;color:#132238;margin-right:8px}
+.pd-line-dash{color:var(--navy);font-weight:800;margin-right:8px}
+.pd-actions{display:flex;flex-wrap:wrap;gap:14px}
+.pd-btn-primary{font-size:13.5px;font-weight:700;color:#fff;background:var(--navy);border:none;border-radius:0px;padding:14px 26px;cursor:pointer;transition:background .3s var(--ease),transform .3s var(--ease),box-shadow .3s var(--ease);box-shadow:0 1px 2px rgba(13,27,42,.1)}
+.pd-btn-primary:hover{background:var(--navy-dark);transform:translateY(-2px);box-shadow:var(--shadow-navy)}
+.pd-btn-secondary{font-size:13.5px;font-weight:700;color:var(--navy);background:#fff;border:1.5px solid #c7d6e8;border-radius:0px;padding:12.5px 26px;cursor:pointer;transition:background .3s var(--ease),border-color .3s var(--ease),transform .3s var(--ease)}
+.pd-btn-secondary:hover{background:#f0f5fb;border-color:var(--navy);transform:translateY(-2px)}
+.pd-top .stroke-tag{max-width:340px;margin-bottom:22px}
+
+.pd-section{margin-bottom:64px}
+.pd-section-h{font-size:22px;font-weight:800;color:var(--ink);margin-bottom:22px;letter-spacing:-.5px;display:flex;align-items:center;gap:12px}
+.pd-section-h::before{content:'';width:4px;height:20px;background:var(--navy);border-radius:0px}
+.pd-overview{font-size:16.5px;color:#374151;line-height:1.8;max-width:780px}
+
+.feat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.feat-card{border:1px solid var(--border);border-radius:0px;padding:24px;background:#fff;transition:border-color .3s var(--ease),box-shadow .35s var(--ease),transform .35s var(--ease)}
+.feat-card:hover{border-color:transparent;box-shadow:var(--shadow-md);transform:translateY(-4px)}
+.feat-icon{width:42px;height:42px;border-radius:0px;background:linear-gradient(155deg,#eef4fb,#e2ecf8);display:flex;align-items:center;justify-content:center;margin-bottom:16px;color:var(--navy);transition:transform .35s var(--ease)}
+.feat-card:hover .feat-icon{transform:scale(1.08) rotate(-4deg)}
+.feat-title{font-size:14.5px;font-weight:800;color:var(--ink);margin-bottom:7px;letter-spacing:-.1px}
+.feat-desc{font-size:14px;color:var(--slate);line-height:1.65}
+
+.spec-table{width:100%;border-collapse:separate;border-spacing:0;border:1px solid var(--border);border-radius:0px;overflow:hidden;box-shadow:var(--shadow-sm)}
+.spec-table tr:nth-child(even){background:var(--bg-soft)}
+.spec-table tr{transition:background .2s var(--ease),box-shadow .2s var(--ease)}
+.spec-table tr:hover{background:#eaf2fb;box-shadow:inset 4px 0 0 var(--navy)}
+.spec-table td{padding:15px 22px;font-size:15px;border-bottom:1px solid var(--border)}
+.spec-table tr:last-child td{border-bottom:none}
+.spec-table td:first-child{font-weight:700;color:#374151;width:36%;letter-spacing:-.1px}
+.spec-table td:last-child{color:#4b5563}
+
+.app-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.app-card{border:1px solid var(--border);border-radius:0px;text-align:center;background:#fff;overflow:hidden;transition:border-color .3s var(--ease),box-shadow .35s var(--ease),transform .35s var(--ease)}
+.app-card:hover{border-color:transparent;box-shadow:var(--shadow-md);transform:translateY(-4px)}
+.app-card-media{height:92px;background:#fff;display:flex;align-items:center;justify-content:center;overflow:hidden;border-bottom:1px solid var(--border)}
+.app-card-media img{width:100%;height:100%;object-fit:cover;transition:transform .5s var(--ease)}
+.app-card:hover .app-card-media img{transform:scale(1.14)}
+.app-card-icon{width:32px;height:32px;border-radius:0px;background:#fff;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;margin:0 auto 10px}
+.app-card-name{font-size:12px;font-weight:700;color:#374151;line-height:1.4}
+.app-card-body{padding:14px 10px 16px}
+
+.related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.related-card{border:1px solid var(--border);border-radius:0px;padding:22px;display:flex;align-items:center;gap:16px;cursor:pointer;background:#fff;text-align:left;width:100%;transition:border-color .3s var(--ease),box-shadow .35s var(--ease),transform .35s var(--ease)}
+.related-card:hover{border-color:transparent;box-shadow:var(--shadow-md);transform:translateY(-3px)}
+.related-icon{width:48px;height:48px;border-radius:0px;background:var(--bg-soft);display:flex;align-items:center;justify-content:center;flex-shrink:0;overflow:hidden;border:1px solid var(--border)}
+.related-icon img{width:100%;height:100%;object-fit:contain;padding:6px}
+.related-icon svg{width:22px;height:22px}
+.related-name{font-size:14.5px;font-weight:800;color:var(--ink)}
+.related-fam{font-size:12px;color:var(--slate);margin-top:3px}
+
+/* ─── FOOTER ─────────────────────────────── */
+footer{background:#0d1b2a;padding:48px 64px 28px;margin-top:40px}
+.footer-row{display:flex;justify-content:space-between;align-items:center;font-size:12.5px;color:rgba(255,255,255,.4)}
+.footer-row a{color:rgba(255,255,255,.5)}
+.footer-row a:hover{color:#fff}
+
+/* ─── BROCHURE ACCENTS (ribbon / stroke-tag / feature-strip / app cards) ─── */
+.page-head{overflow:hidden !important}
+.head-ribbon{position:absolute;top:0;left:0;width:58%;max-width:520px;height:40px;overflow:hidden;pointer-events:none;z-index:1}
+.head-ribbon svg{width:100%;height:100%;display:block}
+
+.stroke-tag{
+  position:relative;
+  background:linear-gradient(115deg,var(--navy-dark) 0%, var(--navy) 100%);
+  color:#fff;border-radius:0px;
+  padding:10px 14px 10px 40px;
+  display:flex;flex-direction:column;justify-content:center;
+  min-height:46px;
+  clip-path:polygon(0 0,100% 0,100% 100%,0 100%,0 60%,9% 100%,0 60%);
+}
+.stroke-tag .stroke-icon{position:absolute;left:9px;top:50%;transform:translateY(-50%);width:18px;height:18px}
+.stroke-tag .stroke-label{font-size:7.5px;font-weight:700;letter-spacing:.9px;text-transform:uppercase;color:rgba(255,255,255,.65);margin-bottom:2px}
+.stroke-tag .stroke-value{font-size:13px;font-weight:800;letter-spacing:.1px}
+
+.feature-strip{
+  position:relative;
+  background:linear-gradient(120deg,#0a2140 0%, var(--navy) 55%, var(--navy-dark) 100%);
+  padding:32px 44px;
+  border-radius:0px;
+}
+.feature-grid{display:grid;grid-template-columns:repeat(3,1fr)}
+.feature-item{display:flex;align-items:center;gap:14px;padding:0 24px;position:relative}
+.feature-item + .feature-item{border-left:1px solid rgba(255,255,255,.16)}
+.feature-icon-circle{width:42px;height:42px;border-radius:50%;border:1.5px solid rgba(255,255,255,.4);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.feature-icon-circle svg{width:20px;height:20px}
+.feature-item-label{font-size:12.5px;font-weight:700;color:#fff;line-height:1.35;letter-spacing:.2px;text-transform:uppercase}
+
+.appscn-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.appscn-card{border:1px solid var(--border);border-radius:0px;overflow:hidden;background:#fff;transition:box-shadow .3s var(--ease),transform .3s var(--ease)}
+.appscn-card:hover{box-shadow:var(--shadow-lg);transform:translateY(-4px)}
+.appscn-media{height:150px;overflow:hidden;background:#f3f5f8}
+.appscn-media img{width:100%;height:100%;object-fit:cover;transition:transform .5s var(--ease)}
+.appscn-card:hover .appscn-media img{transform:scale(1.08)}
+.appscn-body{display:flex;align-items:center;gap:12px;padding:16px 18px}
+.appscn-icon{width:34px;height:34px;border-radius:50%;background:var(--navy);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.appscn-icon svg{width:16px;height:16px}
+.appscn-label{font-size:13.5px;font-weight:800;color:var(--ink)}
+
+@media (max-width:1100px){
+  .feature-strip{padding:26px 28px}
+  .appscn-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:760px){.page-head{display:block;min-height:auto}.head-ribbon{width:80%;height:30px}
+  .feature-strip{padding:22px 20px}
+  .feature-grid{grid-template-columns:1fr;gap:18px}
+  .feature-item + .feature-item{border-left:none;border-top:1px solid rgba(255,255,255,.16);padding-top:18px}
+  .appscn-grid{grid-template-columns:1fr}
+}
+
+/* ─── RESPONSIVE ─────────────────────────── */
+@media (max-width:1100px){
+  .fam-grid{grid-template-columns:repeat(2,1fr)}
+  .feat-grid{grid-template-columns:repeat(2,1fr)}
+  .app-grid{grid-template-columns:repeat(3,1fr)}
+  .related-grid{grid-template-columns:1fr 1fr}
+  .pd-top{grid-template-columns:1fr;gap:32px}
+  .pd-gallery-main{height:360px}
+  .model-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:760px){.page-head{display:block;min-height:auto}.topbar{display:none}
+  nav{padding:0 24px}
+  .nav-menu{display:none}
+  .btn-ghost{display:none}
+  .breadcrumb{padding-left:24px;padding-right:24px}
+  .page-head{padding:44px 24px 48px}
+  .page-h1{font-size:32px}
+  .fam-section,.fam-layout{padding-left:24px;padding-right:24px}
+  .fam-grid{grid-template-columns:1fr}
+  .model-grid{grid-template-columns:1fr}
+  .feat-grid{grid-template-columns:1fr}
+  .app-grid{grid-template-columns:repeat(2,1fr)}
+  .related-grid{grid-template-columns:1fr}
+  .pd-gallery-main{height:300px}
+  footer{padding:36px 24px}
+  .footer-row{flex-direction:column;gap:10px;align-items:flex-start}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <span>Precision Actuator Systems — Global OEM Supply &amp; Application Engineering</span>
+ 
+</div>
+
+<nav>
+  <div class="logo">
+    <span class="torqx-wordmark"><span class="tq-black">Torq</span><span class="tq-x">X</span><span class="tq-tm">TM</span></span>
+  </div>
+  <ul class="nav-menu">
+    <li class="nav-item-dropdown">
+      <a href="products.html">Products <span class="nav-caret"></span></a>
+      <div class="dropdown-panel">
+        <a href="products.html#/family/comfort"><span class="dropdown-series-name">Comfort Series</span></a>
+        <a href="products.html#/family/industrial"><span class="dropdown-series-name">Industrial Series</span></a>
+        <a href="products.html#/family/titan"><span class="dropdown-series-name">Titan Series</span></a>
+        <a href="products.html#/family/solar"><span class="dropdown-series-name">Solar Series</span></a>
+        <a href="products.html#/family/axis"><span class="dropdown-series-name">Axis Series</span></a>
+        <a href="products.html#/family/fluid"><span class="dropdown-series-name">Fluid Series</span></a>
+        <a href="products.html#/family/elevate"><span class="dropdown-series-name">Elevate Series</span></a>
+        <a href="products.html"><span class="dropdown-series-name">View All Products</span></a>
+      </div>
+    </li>
+    <li><a href="index.html#industries">Industries</a></li>
+    <li><a href="index.html#process">Engineering</a></li>
+    <li><a href="index.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <a class="btn-primary" href="contact.html" style="text-decoration:none">Request a Quote</a>
+  </div>
+</nav>
+
+<div class="breadcrumb" id="breadcrumb"></div>
+
+<main id="app"></main>
+
+<footer>
+  <div class="footer-row">
+    <span>© 2026 TorqX Motion Systems. All rights reserved.</span>
+    <span><a href="index.html">Back to Homepage</a></span>
+  </div>
+</footer>
+
+<script>
+/* ───────────────────────── ICONS ───────────────────────── */
+const ICONS = {
+  comfort: '<svg viewBox="0 0 40 40" fill="none" stroke="#163B63" stroke-width="1.6"><rect x="5" y="17" width="30" height="7" rx="3.5"/><circle cx="11" cy="20.5" r="2.6" fill="#163B63" stroke="none"/></svg>',
+  industrial: '<svg viewBox="0 0 40 40" fill="none" stroke="#163B63" stroke-width="1.6"><rect x="3" y="15" width="34" height="10" rx="3"/><rect x="10" y="15" width="4" height="10" fill="#163B63" stroke="none"/></svg>',
+  titan: '<svg viewBox="0 0 40 40" fill="none" stroke="#163B63" stroke-width="1.6"><path d="M4 20h32M4 20l8-8M4 20l8 8M36 20l-8-8M36 20l-8 8"/></svg>',
+  solar: '<svg viewBox="0 0 40 40" fill="none" stroke="#163B63" stroke-width="1.6"><circle cx="20" cy="20" r="13"/><path d="M20 7v13l8 8"/></svg>',
+  axis: '<svg viewBox="0 0 40 40" fill="none" stroke="#163B63" stroke-width="1.6"><path d="M8 20h24M20 8v24"/><circle cx="20" cy="20" r="6"/></svg>',
+  fluid: '<svg viewBox="0 0 40 40" fill="none" stroke="#163B63" stroke-width="1.6"><path d="M6 20s4-12 14-12 14 12 14 12-4 12-14 12S6 20 6 20z"/><circle cx="20" cy="20" r="4" fill="#163B63" stroke="none"/></svg>',
+  elevate: '<svg viewBox="0 0 40 40" fill="none" stroke="#163B63" stroke-width="1.6"><rect x="14" y="4" width="12" height="32" rx="3"/><line x1="9" y1="14" x2="14" y2="14"/><line x1="9" y1="24" x2="14" y2="24"/><line x1="26" y1="14" x2="31" y2="14"/><line x1="26" y1="24" x2="31" y2="24"/></svg>'
+};
+function icon(name){ return ICONS[name] || ICONS.industrial; }
+
+/* ─── BROCHURE HELPERS ───────────────────── */
+function ribbonHTML(){
+  return `<div class="head-ribbon"><svg viewBox="0 0 620 40" preserveAspectRatio="none">
+    <polygon points="0,0 620,0 0,40" fill="#0a2140"/>
+    <polygon points="0,0 460,0 0,26" fill="#163B63" opacity=".55"/>
+  </svg></div>`;
+}
+function strokeIconSVG(){
+  return '<svg class="stroke-icon" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><rect x="4" y="10" width="16" height="4" rx="1.5"/><circle cx="7" cy="12" r="1.3" fill="#fff" stroke="none"/></svg>';
+}
+/* Picks the most representative spec (stroke / load / force) to headline as a stroke-tag */
+function headlineSpec(specs){
+  if(!specs || !specs.length) return null;
+  const priority = /stroke|load|force|pipe/i;
+  const hit = specs.find(([k])=>priority.test(k));
+  return hit || specs[0];
+}
+function strokeTagHTML(specs){
+  const spec = headlineSpec(specs);
+  if(!spec) return '';
+  const [label, value] = spec;
+  return `<div class="stroke-tag">${strokeIconSVG()}<span class="stroke-label">${label}</span><span class="stroke-value">${value}</span></div>`;
+}
+const PILLAR_ICONS = [
+  '<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>',
+  '<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><circle cx="12" cy="13" r="7"/><path d="M12 13l3-3M9 4h6"/></svg>',
+  '<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><rect x="4" y="9" width="16" height="11" rx="1.5"/><path d="M8 9V6a4 4 0 0 1 8 0v3"/></svg>'
+];
+function featureStripHTML(items){
+  /* items: array of {label} strings or {t} feature objects — normalises to label text */
+  const cells = items.slice(0,3).map((it,i)=>{
+    const label = typeof it === 'string' ? it : it.t;
+    return `<div class="feature-item">
+      <div class="feature-icon-circle">${PILLAR_ICONS[i % PILLAR_ICONS.length]}</div>
+      <div class="feature-item-label">${label}</div>
+    </div>`;
+  }).join('');
+  return `<div class="feature-strip"><div class="feature-grid">${cells}</div></div>`;
+}
+function appScenarioIcon(alt){
+  if(/marine|offshore|boat/i.test(alt)) return '<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7"><path d="M3 17c1.5 1.3 3 1.3 4.5 0s3-1.3 4.5 0 3 1.3 4.5 0"/><path d="M6 17l1-9h6l3 6"/><path d="M9 8V4h3"/></svg>';
+  if(/lab|laborat|medical|hospital|dental|clinic/i.test(alt)) return '<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7"><path d="M9 3h6M10 3v6l-5 9a2 2 0 0 0 2 3h10a2 2 0 0 0 2-3l-5-9V3"/></svg>';
+  if(/vehicle|truck|construction|mobile|forklift|snow|dumper|mining/i.test(alt)) return '<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7"><rect x="2" y="10" width="12" height="7" rx="1"/><path d="M14 12h4l3 3v2h-7z"/><circle cx="6" cy="19" r="1.8"/><circle cx="17" cy="19" r="1.8"/></svg>';
+  if(/solar|renewable|wind|energy/i.test(alt)) return '<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7"><circle cx="12" cy="12" r="4"/><path d="M12 3v2M12 19v2M4 12H2M22 12h-2M5 5l1.5 1.5M17.5 17.5L19 19M5 19l1.5-1.5M17.5 6.5L19 5"/></svg>';
+  if(/robot|cobot|agv|welding|pick/i.test(alt)) return '<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7"><circle cx="8" cy="17" r="3"/><circle cx="17" cy="17" r="3"/><path d="M8 14V8l4-4 4 5v5"/></svg>';
+  return '<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 12h8M12 8v8"/></svg>';
+}
+function appScenarioCard(index, alt){
+  return `<div class="appscn-card">
+    <div class="appscn-media">${applicationImage(index, alt)}</div>
+    <div class="appscn-body">
+      <div class="appscn-icon">${appScenarioIcon(alt)}</div>
+      <div class="appscn-label">${alt}</div>
+    </div>
+  </div>`;
+}
+
+const FAMILY_IMAGES = {
+  comfort: 'images/products/Comfort C30.png',
+  industrial: 'images/products/Industrial I35.png',
+  titan: 'images/products/Titan 120.png',
+  solar: 'images/products/Solar S150.png',
+  axis: 'images/products/Axis A90.png',
+  fluid: 'images/products/Fluid F120.png',
+  elevate: 'images/products/Elevate ER.png'
+  
+};
+function familyImage(slug, alt){
+  const src = FAMILY_IMAGES[slug];
+  return src ? `<img src="${src}" alt="${alt} product image"/>` : icon(slug);
+}
+const PRODUCT_IMAGES = {
+  c30: 'images/products/Comfort C30.png',
+  c60: 'images/products/Comfort C60.png',
+  i35: 'images/products/Industrial I35.png',
+  i80: 'images/products/Industrial I80.png',
+  t120: 'images/products/Titan 120.png',
+  t170: 'images/products/Titan 170.png',
+  s150: 'images/products/Solar S150.png',
+  s300: 'images/products/Solar S300.png',
+  s500: 'images/products/Solar S 500.png',
+  a90: 'images/products/Axis A90.png',
+  f120: 'images/products/Fluid F120.png',
+  f200: 'images/products/Fluid F200.png',
+  f320: 'images/products/Fluid F320.png',
+  f500: 'images/products/Fluid F500.png',
+  prof200i: 'images/products/Fluid Pro F200i.png',
+  prof300i: 'images/products/Fluid Pro F300i.png',
+  er: 'images/products/Elevate ER.png',
+  es: 'images/products/Elevate ES.png',
+  ec: 'images/products/Elevate EC.png'
+};
+/* Descriptive alt text, title attribute and caption copy for each product image —
+   used on model-grid thumbnails, the main product-detail gallery image, and related-product cards. */
+const PRODUCT_IMAGE_META = {
+  c30:      { alt:'Comfort C30 electric linear actuator with compact, low-noise aluminium-alloy housing',        title:'Comfort C30 Electric Linear Actuator',                     caption:'Comfort C30 Electric Linear Actuator' },
+  c60:      { alt:'Comfort C60 electric linear actuator with extended stroke and stainless steel rod',           title:'Comfort C60 Electric Linear Actuator',                     caption:'Comfort C60 Electric Linear Actuator' },
+  i35:      { alt:'Industrial I35 electric linear actuator with telescopic rod and IP69-rated sealed housing',   title:'Industrial I35 Electric Linear Actuator',                  caption:'Industrial I35 Electric Linear Actuator' },
+  i80:      { alt:'Industrial I80 electric linear actuator with manual override and weatherproof housing',      title:'Industrial I80 Electric Linear Actuator',                  caption:'Industrial I80 Electric Linear Actuator' },
+  t120:     { alt:'Titan T120 high-load electric linear actuator with built-in limit protection',                title:'Titan T120 Electric Linear Actuator',                      caption:'Titan T120 Electric Linear Actuator' },
+  t170:     { alt:'Titan T170 heavy-duty electric linear actuator rated to 17,000N dynamic load',                title:'Titan T170 Electric Linear Actuator',                      caption:'Titan T170 Electric Linear Actuator' },
+  s150:     { alt:'Solar S150 tracking actuator with adjustable rear mount for solar array installations',       title:'Solar S150 Solar Tracking Actuator',                       caption:'Solar S150 Solar Tracking Actuator' },
+  s300:     { alt:'Solar S300 heavy-duty tracking actuator with all-metal gear drivetrain',                       title:'Solar S300 Solar Tracking Actuator',                       caption:'Solar S300 Solar Tracking Actuator' },
+  s500:     { alt:'Solar S500 maximum-capacity tracking actuator for utility-scale solar installations',         title:'Solar S500 Solar Tracking Actuator',                       caption:'Solar S500 Solar Tracking Actuator' },
+  a90:      { alt:'Axis A90 precision single-axis actuator with sealed IP67 enclosure',                          title:'Axis A90 Precision Linear Actuator',                       caption:'Axis A90 Precision Linear Actuator' },
+  f120:     { alt:'Fluid F120 electro-hydraulic actuator with self-contained motor and hydraulic pump',          title:'Fluid F120 Electro-Hydraulic Actuator',                    caption:'Fluid F120 Electro-Hydraulic Actuator' },
+  f200:     { alt:'Fluid F200 electro-hydraulic actuator with 2-tonne push force capacity',                      title:'Fluid F200 Electro-Hydraulic Actuator',                    caption:'Fluid F200 Electro-Hydraulic Actuator' },
+  f320:     { alt:'Fluid F320 electro-hydraulic actuator delivering 3.2-tonne push force',                       title:'Fluid F320 Electro-Hydraulic Actuator',                    caption:'Fluid F320 Electro-Hydraulic Actuator' },
+  f500:     { alt:'Fluid F500 flagship electro-hydraulic actuator rated to 5-tonne top-of-lift force',           title:'Fluid F500 Electro-Hydraulic Actuator',                    caption:'Fluid F500 Electro-Hydraulic Actuator' },
+  prof200i: { alt:'Fluid Pro F200i integrated electro-hydraulic actuator with hose-free, zero-spill design',     title:'Fluid Pro F200i Integrated Electro-Hydraulic Actuator',   caption:'Fluid Pro F200i Integrated Electro-Hydraulic Actuator' },
+  prof300i: { alt:'Fluid Pro F300i integrated electro-hydraulic actuator with extended push-rod stroke',         title:'Fluid Pro F300i Integrated Electro-Hydraulic Actuator',   caption:'Fluid Pro F300i Integrated Electro-Hydraulic Actuator' },
+  er:       { alt:'Elevate ER heavy-duty self-supporting lift column with servo motor and CAN bus control',      title:'Elevate ER Heavy-Duty Lift Column',                        caption:'Elevate ER Heavy-Duty Lift Column' },
+  es:       { alt:'Elevate ES self-supporting height-adjustable lift column available in six frame sizes',       title:'Elevate ES Lift Column',                                   caption:'Elevate ES Lift Column' },
+  ec:       { alt:'Elevate EC compact telescopic lift column with space-saving, high-rigidity footprint',        title:'Elevate EC Compact Lift Column',                           caption:'Elevate EC Compact Lift Column' }
+};
+function productImage(modelKey, familySlug, alt, withCaption){
+  const src = PRODUCT_IMAGES[modelKey] || FAMILY_IMAGES[familySlug];
+  if(!src) return icon(familySlug);
+  const meta = PRODUCT_IMAGE_META[modelKey];
+  const altText = meta ? meta.alt : `${alt} product image`;
+  const titleText = meta ? meta.title : alt;
+  const imgTag = `<img class="product-img product-img-${modelKey}" src="${src}" alt="${altText}" title="${titleText}"/>`;
+  if(withCaption && meta){
+    return `<figure class="product-figure">${imgTag}<figcaption class="product-caption">${meta.caption}</figcaption></figure>`;
+  }
+  return imgTag;
+}
+const AI_HOSPITAL = 'https://images.unsplash.com/photo-1648224394463-4589e018f2c3?w=640&h=360&q=80&auto=format&fit=crop';
+const AI_DENTAL = 'https://images.unsplash.com/photo-1704455306251-b4634215d98f?w=640&h=360&q=80&auto=format&fit=crop';
+const AI_FURNITURE = 'https://images.unsplash.com/photo-1622131278701-eb225474ffd2?w=640&h=360&q=80&auto=format&fit=crop';
+const AI_FURNITURE_ALT = 'https://images.unsplash.com/photo-1723810388971-f8cd6474597f?w=640&h=360&q=80&auto=format&fit=crop';
+const AI_LAB = 'https://images.unsplash.com/photo-1646956141021-d687dcfe5fb9?w=640&h=360&q=80&auto=format&fit=crop';
+const AI_AGRI = 'https://images.unsplash.com/photo-1684677806708-f528f4950ad4?w=640&h=360&q=80&auto=format&fit=crop';
+const AI_FORKLIFT = 'https://images.unsplash.com/photo-1740914994657-f1cdffdc418e?w=640&h=360&q=80&auto=format&fit=crop';
+const AI_SNOWPLOW = 'https://images.unsplash.com/photo-1706466617833-a37b7ceaa036?w=640&h=360&q=80&auto=format&fit=crop';
+const AI_DUMPER = 'https://images.unsplash.com/photo-1746349086423-06ea6b4d73f7?w=640&h=360&q=80&auto=format&fit=crop';
+const AI_CONSTRUCTION = 'https://images.unsplash.com/photo-1780389098001-e641e50aeebd?w=640&h=360&q=80&auto=format&fit=crop';
+const AI_SOLAR = 'https://images.unsplash.com/photo-1680355065203-43ad84bb6e69?w=640&h=360&q=80&auto=format&fit=crop';
+const AI_MARINE = 'https://images.unsplash.com/photo-1758902064778-c5c68c7e8f82?w=640&h=360&q=80&auto=format&fit=crop';
+const AI_ROBOT = 'https://images.unsplash.com/photo-1712238107648-4e94c158ab3d?w=640&h=360&q=80&auto=format&fit=crop';
+const AI_ROBOT_ALT = 'https://images.unsplash.com/photo-1752614671052-92e18f534db1?w=640&h=360&q=80&auto=format&fit=crop';
+const AI_MATERIAL = 'https://images.unsplash.com/photo-1645736315000-6f788915923b?w=640&h=360&q=80&auto=format&fit=crop';
+const AI_PRECISION = 'https://images.unsplash.com/photo-1666618090858-fbcee636bd3e?w=640&h=360&q=80&auto=format&fit=crop';
+const AI_DEFENSE = 'https://images.unsplash.com/photo-1582432397759-9f55fc7e0585?w=640&h=360&q=80&auto=format&fit=crop';
+const AI_PACKAGING = 'https://images.unsplash.com/photo-1701328778019-e95dedbf5346?w=640&h=360&q=80&auto=format&fit=crop';
+const AI_AUTOMATION = 'https://images.unsplash.com/photo-1647427060118-4911c9821b82?w=640&h=360&q=80&auto=format&fit=crop';
+
+/* Exact application-name -> local image file map.
+   Only 22 distinct photos are needed (saved into images/applications/) —
+   related application names intentionally share the same file. */
+const APPLICATION_IMAGE_MAP = {
+  'agvs': 'images/applications/app-agvs.jpg',
+  'material handling': 'images/applications/app-agvs.jpg',
+  'warehouse utilities': 'images/applications/app-agvs.jpg',
+
+  'adjustable chairs': 'images/applications/app-adjustable-chairs.jpg',
+  'adjustable platforms': 'images/applications/app-adjustable-chairs.jpg',
+  'electric booths': 'images/applications/app-adjustable-chairs.jpg',
+
+  'agricultural automation': 'images/applications/app-agricultural-machinery.jpg',
+  'agricultural harvesters': 'images/applications/app-agricultural-machinery.jpg',
+  'agricultural machinery': 'images/applications/app-agricultural-machinery.jpg',
+
+  'automotive manufacturing': 'images/applications/app-automotive-manufacturing.jpg',
+
+  'cobots': 'images/applications/app-cobots.jpg',
+  'robotics & cobots': 'images/applications/app-cobots.jpg',
+  'industrial robots': 'images/applications/app-cobots.jpg',
+  'robotic platforms': 'images/applications/app-cobots.jpg',
+
+  'commercial solar tracking': 'images/applications/app-solar-tracking.jpg',
+  'solar tracking systems': 'images/applications/app-solar-tracking.jpg',
+  'utility-scale solar farms': 'images/applications/app-solar-tracking.jpg',
+  'photovoltaic installations': 'images/applications/app-solar-tracking.jpg',
+  'solar & wind energy': 'images/applications/app-solar-tracking.jpg',
+  'renewable energy': 'images/applications/app-solar-tracking.jpg',
+
+  'construction & mining': 'images/applications/app-construction-equipment.jpg',
+  'construction equipment': 'images/applications/app-construction-equipment.jpg',
+  'construction vehicles': 'images/applications/app-construction-equipment.jpg',
+
+  'defense systems': 'images/applications/app-defense-systems.jpg',
+
+  'dumper trucks': 'images/applications/app-dumper-trucks.jpg',
+
+  'electric sofas': 'images/applications/app-electric-sofas.jpg',
+
+  'forklifts': 'images/applications/app-forklifts.jpg',
+
+  'heavy-duty lifting systems': 'images/applications/app-lifting-platforms.jpg',
+  'lifting platforms': 'images/applications/app-lifting-platforms.jpg',
+
+  'hospital beds': 'images/applications/app-hospital-beds.jpg',
+  'medical bed equipment': 'images/applications/app-hospital-beds.jpg',
+  'medical beds': 'images/applications/app-hospital-beds.jpg',
+  'medical equipment': 'images/applications/app-hospital-beds.jpg',
+  'medical use': 'images/applications/app-hospital-beds.jpg',
+
+  'industrial automation': 'images/applications/app-industrial-automation.jpg',
+  'machine automation': 'images/applications/app-industrial-automation.jpg',
+
+  'industrial positioning': 'images/applications/app-industrial-workstations.jpg',
+  'industrial workstations': 'images/applications/app-industrial-workstations.jpg',
+  'infrastructure systems': 'images/applications/app-industrial-workstations.jpg',
+
+  'lab instruments': 'images/applications/app-lab-instruments.jpg',
+
+  'marine & offshore': 'images/applications/app-marine-offshore.jpg',
+
+  'mobile & special vehicles': 'images/applications/app-mobile-equipment.jpg',
+  'mobile equipment': 'images/applications/app-mobile-equipment.jpg',
+  'outdoor power equipment': 'images/applications/app-mobile-equipment.jpg',
+  'special purpose vehicles': 'images/applications/app-mobile-equipment.jpg',
+
+  'packaging machinery': 'images/applications/app-packaging-machinery.jpg',
+
+  'pick-and-place': 'images/applications/app-pick-and-place.jpg',
+
+  'robotic welding': 'images/applications/app-robotic-welding.jpg',
+
+  'snow plows': 'images/applications/app-snow-plows.jpg'
+};
+const DEFAULT_APPLICATION_IMAGE = AI_ROBOT_ALT;
+function applicationImage(index, alt){
+  const src = APPLICATION_IMAGE_MAP[alt.trim().toLowerCase()] || DEFAULT_APPLICATION_IMAGE;
+  return `<img src="${src}" alt="${alt} application image" loading="lazy"/>`;
+}
+
+
+/* ───────────────────────── DATA ───────────────────────── */
+const FAMILIES = {
+  comfort: {
+    name: 'Comfort Series', badge: 'Electric Linear', icon: 'comfort',
+    desc: 'Compact, ultra-quiet linear actuators for ergonomic and lifestyle applications — smooth, low-noise positioning for furniture and medical settings.',
+    applications: 'Sit-stand desks, hospital beds, dental chairs, home automation',
+    models: ['c30','c60']
+  },
+  industrial: {
+    name: 'Industrial Series', badge: 'Electric Linear', icon: 'industrial',
+    desc: 'Heavy-duty electric actuators rated for continuous industrial duty cycles, with sealed housings and optional encoder feedback.',
+    applications: 'CNC machinery, conveyor systems, factory automation, testing rigs',
+    models: ['i35','i80']
+  },
+  titan: {
+    name: 'Titan Series', badge: 'Electric Linear', icon: 'titan',
+    desc: 'High-load electric actuators for structural and infrastructure applications, engineered for sustained high load and extended duty cycles.',
+    applications: 'Heavy lifting platforms, industrial processing, large-format automation',
+    models: ['t120','t170']
+  },
+  solar: {
+    name: 'Solar Series', badge: 'Tracking Actuator', icon: 'solar',
+    desc: 'Heavy-duty tracking actuators for solar installations — IP66/IP67-rated, corrosion-resistant construction delivering up to 50,000 N of dynamic load, from residential arrays to utility-scale solar farms.',
+    applications: 'Solar tracking systems, photovoltaic farms, industrial automation, heavy-duty lifting',
+    models: ['s150','s300','s500']
+  },
+  axis: {
+    name: 'Axis Series', badge: 'Precision Linear', icon: 'axis',
+    desc: 'Single-axis actuator engineered for precision positioning in robotics and high-accuracy applications with integrated encoder feedback.',
+    applications: 'Semiconductor handling, medical robotics, precision assembly',
+    models: ['a90']
+  },
+  fluid: {
+    name: 'Fluid Series', badge: 'Hydraulic', icon: 'fluid',
+    desc: 'Electro-hydraulic actuators combining hydraulic power density with the control simplicity of electric actuation. Pro variants add integrated control.',
+    applications: 'Mobile machinery, agricultural equipment, marine systems',
+    models: ['f120','f200','f320','f500','prof200i','prof300i']
+  },
+  elevate: {
+    name: 'Elevate Series', badge: 'Lift Column', icon: 'elevate',
+    desc: 'Modular telescoping lift columns for height-adjustable platforms, available in self-supporting, compact, and heavy-duty frame configurations.',
+    applications: 'Height-adjustable desks, medical tables, laboratory platforms',
+    models: ['er','es','ec']
+  }
+};
+
+const MODELS = {
+  c30: {
+    name:'Comfort C30', family:'comfort', tag:'Electric Linear Actuator',
+    short:'Compact, low-noise electric linear actuator for moderate-force, precise-positioning applications across medical and lifestyle furniture.',
+    overview:'The TorqX Comfort C30 is a compact, low-noise electric linear actuator designed for applications that require reliable linear motion with moderate force and precise positioning. It is suitable for medical equipment, electric sofas, experimental devices, and various industrial automation systems. An optional Hall sensor is available for position feedback and motion control.',
+    features:[
+      {t:'Max Force 3000N', d:'Delivers up to 3000N of pushing and pulling force for high-load lifestyle and medical applications.'},
+      {t:'Compact Design', d:'Slim aluminium-alloy housing built for tight installation envelopes.'},
+      {t:'Quiet Operation', d:'Low-noise brushed DC motor suited to occupied indoor environments.'},
+      {t:'IP67 Protection', d:'Sealed against dust and water ingress for reliable long-term use.'},
+      {t:'Hall Sensor Feedback', d:'Optional position feedback for accurate, repeatable control.'},
+      {t:'Wide Voltage Range', d:'Available in 24V, 29V, and 36V DC configurations.'}
+    ],
+    specs:[['Operation Mode','Electric'],['Application','Industrial'],['Stroke Range','50 – 1000 mm'],['Dynamic Load','≤ 3000 N'],['Duty Cycle','10%'],['Motor Type','Brushed DC'],['Overload Protection','Electronic'],['IP Rating','IP67'],['Position Feedback','Hall Sensor / IO'],['Input Voltage','24VDC / 29V / 36VDC'],['Operating Temperature','0°C to 40°C']],
+    applications:['Electric Sofas','Hospital Beds','Adjustable Chairs','Lab Instruments','Industrial Automation'],
+    related:['c60','i35','er']
+  },
+  c60: {
+    name:'Comfort C60', family:'comfort', tag:'Electric Linear Actuator',
+    short:'A higher-load extension of the Comfort platform with extended stroke range and built-in stroke limit switching.',
+    overview:'The TorqX Comfort C60 is a compact, low-noise electric linear actuator designed for applications that require reliable linear motion with moderate force and precise positioning. It is suitable for medical equipment, electric sofas, experimental devices, and various industrial automation systems. An optional Hall sensor is available for position feedback and motion control.',
+    features:[
+      {t:'Dynamic Load 6000N', d:'Rated for higher-load duty than the C30, suited to heavier furniture and equipment.'},
+      {t:'Extended Stroke', d:'Stroke range from 20mm up to 800mm for flexible installation.'},
+      {t:'Built-in Stroke Switch', d:'Integrated limit switch removes the need for external end-stop wiring.'},
+      {t:'Aluminium Alloy Housing', d:'Structural body provides strength, protection and heat dissipation.'},
+      {t:'Stainless Steel Rod', d:'Corrosion-resistant extending shaft for long service life.'},
+      {t:'Multi-Voltage Input', d:'Runs on 12V, 24V, 36V or 48V DC supplies.'}
+    ],
+    specs:[['Operation Mode','Electric'],['Application','Industrial'],['Stroke Range','20 – 800 mm'],['Dynamic Load','≤ 6000 N'],['Limit Switch','Built-in Stroke Switch'],['Motor Type','DC Motor'],['Overload Protection','Electronic'],['IP Rating','IP54'],['Position Feedback','Hall Sensor / IO'],['Input Voltage','12V / 24V / 36V / 48V'],['Operating Temperature','-26°C to 65°C']],
+    applications:['Electric Booths','Electric Sofas','Medical Equipment','Industrial Automation','Agricultural Machinery'],
+    related:['c30','i80','er']
+  },
+  i35: {
+    name:'Industrial I35', family:'industrial', tag:'Electric Linear Actuator',
+    short:'Telescopic-rod industrial actuator engineered for high thrust output and IP69 protection in demanding automation environments.',
+    overview:'The TorqX Industrial I35 Linear Actuator is engineered for reliable motion control in demanding industrial environments. Its compact, robust structure delivers high force output, smooth operation, and long service life. The telescopic rod design provides excellent stability and efficient power transmission, with multiple stroke and voltage options available to suit specific application requirements.',
+    features:[
+      {t:'High Thrust Output', d:'Delivers up to 3500N of force for demanding industrial applications.'},
+      {t:'IP69 Protection', d:'Complete protection against dust and high-pressure, high-temperature water jets.'},
+      {t:'Telescopic Rod', d:'Excellent stability and efficient power transmission in a compact footprint.'},
+      {t:'All-Metal Gears', d:'Durable gear train rated for continuous-duty industrial cycling.'},
+      {t:'Intelligent Lock', d:'Self-locking mechanism securely holds position when power is removed.'},
+      {t:'Low Resistance Drive', d:'Power-saving motor design reduces operating cost over the duty cycle.'}
+    ],
+    specs:[['Input Voltage','12V / 24V / 36V / 48V DC'],['Stroke Length','50 – 1000 mm'],['Max Speed','170 mm/s'],['Maximum Push Force','3500 N'],['Rated Load','3500 N'],['IP Rating','IP69'],['Overload Protection','Built-in Limit Switch'],['Position Feedback','Optional Hall Sensor / Potentiometer']],
+    applications:['Agricultural Machinery','Medical Equipment','Mobile Equipment','Industrial Automation','Material Handling'],
+    related:['i80','t120','c30']
+  },
+  i80: {
+    name:'Industrial I80', family:'industrial', tag:'Electric Linear Actuator',
+    short:'Configurable heavy-duty actuator with manual override, multiple motor options, and weather protection up to IP66.',
+    overview:'The Industrial I80 offers high load capacity, excellent transmission efficiency, and multiple control options, making it a versatile solution across a wide range of industrial applications. Its robust construction and environmental resistance provide reliable performance in demanding operating conditions, with manual override available during power loss or emergency situations.',
+    features:[
+      {t:'Manual Override', d:'Allows manual extension or retraction during power failure or emergency.'},
+      {t:'Configurable Motor', d:'Available with brushed DC, brushless, servo, or stepper motor options.'},
+      {t:'Wide Weather Protection', d:'Selectable IP rating from IP20 up to IP66 depending on configuration.'},
+      {t:'High Dynamic Load', d:'Rated up to 7000N dynamic load across a 1000mm stroke.'},
+      {t:'Flexible Feedback', d:'Endstop signal, encoder, reed switch, potentiometer, or Hall sensor options.'},
+      {t:'Zi-Ni Coated Mounts', d:'Corrosion-resistant mounting ends extend service life outdoors.'}
+    ],
+    specs:[['Lead Screw','Acme Screw / Ball Screw'],['Operation Mode','Electric + Manual'],['Stroke Range','1000 mm'],['Dynamic Load','≤ 7000 N'],['Duty Cycle','25%'],['Motor Type','Brushed DC / Brushless / Servo / Stepper'],['Weather Protection','IP20 – IP66'],['Operating Temperature','-40°C to 64°C'],['Operating Noise','≤ 65 dB'],['Input Voltage','12V / 24V / 36V / 48V DC']],
+    applications:['Construction Equipment','Special Purpose Vehicles','Medical Use','Renewable Energy','Material Handling'],
+    related:['i35','t170','er']
+  },
+  t120: {
+    name:'Titan T120', family:'titan', tag:'Electric Linear Actuator',
+    short:'High-load structural actuator with built-in limit protection and manual override for uninterrupted system access.',
+    overview:'The Titan T120 offers high load capacity, excellent transmission efficiency, and diverse control options, positioning it as a versatile and reliable solution for demanding applications. Its robust construction and environmental resilience make it a competitive alternative to conventional hydraulic and pneumatic systems where dependable performance is critical.',
+    features:[
+      {t:'Reliable Motion Control', d:'Precise linear movement for automation, lifting and positioning duty.'},
+      {t:'Built-in Limit Protection', d:'Integrated limit switches and robust cable connectivity for safe operation.'},
+      {t:'Manual Override', d:'Enables operation during power loss for uninterrupted accessibility.'},
+      {t:'High Dynamic Load', d:'Rated up to 12,000N for structural and infrastructure-grade applications.'},
+      {t:'IP66 Rated', d:'Strong protection against dust and powerful water jets.'},
+      {t:'Stainless Steel Rod', d:'Zi-Ni coated mounting ends for corrosion resistance.'}
+    ],
+    specs:[['Lead Screw','Acme Screw / Ball Screw'],['Operation Mode','Electric with Manual Override'],['Stroke Range','50 – 1000 mm'],['Dynamic Load','≤ 12,000 N'],['Duty Cycle','25%'],['Motor Type','Brushed DC'],['Overload Protection','Electronic'],['IP Rating','IP66'],['Position Feedback','None / Endstop / Potentiometer / Hall'],['Operating Temperature','-40°C to 65°C']],
+    applications:['Construction Vehicles','Outdoor Power Equipment','Solar & Wind Energy','Warehouse Utilities','Industrial Automation'],
+    related:['t170','i80','er']
+  },
+  t170: {
+    name:'Titan T170', family:'titan', tag:'Electric Linear Actuator',
+    short:'The highest-capacity actuator in the Titan range, rated to 17,000N dynamic load with a 20,000N self-locking force.',
+    overview:'The Titan T170 extends the Titan platform to the highest force ratings in the TorqX range, combining a robust construction with environmental resilience to compete with conventional hydraulic and pneumatic systems in heavy infrastructure and processing applications.',
+    features:[
+      {t:'Maximum Load Rating', d:'Dynamic load of up to 17,000N — the highest in the Titan range.'},
+      {t:'High Self-Locking Force', d:'Holds position securely under loads up to 20,000N.'},
+      {t:'Built-in Limit Protection', d:'Integrated limit switches for safe, maintenance-friendly operation.'},
+      {t:'Manual Override', d:'Continued access during power loss or emergency conditions.'},
+      {t:'IP67 Rated', d:'Full protection against dust and temporary immersion.'},
+      {t:'Wide Duty Cycle', d:'Rated for 20–35% duty cycle across extended operating periods.'}
+    ],
+    specs:[['Lead Screw','Acme Screw / Ball Screw'],['Operation Mode','Electric with Manual Override'],['Stroke Range','50 – 1000 mm'],['Dynamic Load','≤ 17,000 N'],['Self-Locking Force','≤ 20,000 N'],['Duty Cycle','20% – 35%'],['Motor Type','Brushed DC'],['IP Rating','IP67'],['Operating Temperature','-10°C to 64°C'],['Operating Noise','≤ 65 dB']],
+    applications:['Construction Vehicles','Outdoor Power Equipment','Solar & Wind Energy','Warehouse Utilities','Industrial Automation'],
+    related:['t120','i80','es']
+  },
+  f120: {
+    name:'Fluid F120', family:'fluid', tag:'Electro-Hydraulic Actuator',
+    short:'Entry-point electro-hydraulic actuator combining a DC motor, hydraulic pump and cylinder in a compact self-contained unit.',
+    overview:'The Fluid F120 Series is a heavy-duty actuation solution engineered for applications requiring high load capacity, extended stroke lengths, and dependable performance in demanding environments — combining the power density of hydraulic systems with the simplicity and controllability of electric actuation.',
+    features:[
+      {t:'Reliable Motion Control', d:'Precise linear movement for automation, lifting and positioning.'},
+      {t:'Built-in Limit Protection', d:'Integrated limit switches for safe, stable operation.'},
+      {t:'Self-Contained Unit', d:'Motor, hydraulic pump and cylinder integrated into one compact body.'},
+      {t:'Multiple Power Options', d:'Available in 800W, 1000W and 1200W configurations.'},
+      {t:'Wide Operating Range', d:'Rated from -30°C to 70°C for harsh outdoor environments.'},
+      {t:'IPX5 Waterproof', d:'Protected against low-pressure water jets from any direction.'}
+    ],
+    specs:[['Input Voltage','DC 24V / 48V'],['Power Options','800W / 1000W / 1200W'],['Pump Displacement','0.38cc / 0.6cc / 0.88cc'],['Stroke Length','50 – 800 mm'],['Maximum Push Force','1.2 T'],['Retraction Force','0.7 T'],['Speed Options','25 – 56 mm/s'],['Operating Temperature','-30°C to 70°C'],['Waterproof Rating','IPX5']],
+    applications:['Agricultural Machinery','Mobile & Special Vehicles','Construction & Mining','Marine & Offshore','Industrial Automation'],
+    related:['f200','f320','prof200i']
+  },
+  f200: {
+    name:'Fluid F200', family:'fluid', tag:'Electro-Hydraulic Actuator',
+    short:'Mid-capacity electro-hydraulic actuator stepping up to 2T push force with an extended 1000mm stroke option.',
+    overview:'The Fluid F200 Series steps up load capacity from the F120 platform while retaining the same compact, self-contained electro-hydraulic architecture — suited to applications needing greater thrust and longer stroke without moving to a fully hydraulic system.',
+    features:[
+      {t:'2T Push Force', d:'Nearly double the thrust of the F120 for heavier-duty lifting tasks.'},
+      {t:'Extended Stroke', d:'Stroke range up to 1000mm for longer-travel applications.'},
+      {t:'1.3T Retraction Force', d:'Strong retraction performance for pull-type load cycles.'},
+      {t:'Multiple Power Options', d:'800W, 1000W and 1200W configurations available.'},
+      {t:'Wide Operating Range', d:'Rated from -30°C to 70°C.'},
+      {t:'IPX5 Waterproof', d:'Reliable sealing for outdoor and mobile equipment use.'}
+    ],
+    specs:[['Input Voltage','DC 24V / 48V'],['Power Options','800W / 1000W / 1200W'],['Pump Displacement','0.38cc / 0.6cc / 0.88cc'],['Stroke Length','50 – 1000 mm'],['Maximum Push Force','2 T'],['Retraction Force','1.3 T'],['Speed Options','16 – 38 mm/s'],['Operating Temperature','-30°C to 70°C'],['Waterproof Rating','IPX5']],
+    applications:['Agricultural Machinery','Mobile & Special Vehicles','Construction & Mining','Marine & Offshore','Industrial Automation'],
+    related:['f120','f320','f500']
+  },
+  f320: {
+    name:'Fluid F320', family:'fluid', tag:'Electro-Hydraulic Actuator',
+    short:'High-force electro-hydraulic actuator delivering 3.2T of push force for heavy mobile and industrial machinery.',
+    overview:'The Fluid F320 Series targets heavier-duty applications, delivering significantly higher thrust within the same compact self-contained architecture as the rest of the Fluid range, while keeping stroke and speed options configurable to the application.',
+    features:[
+      {t:'3.2T Push Force', d:'High-thrust output suited to heavy mobile and industrial equipment.'},
+      {t:'2T Retraction Force', d:'Strong pull performance for demanding retraction cycles.'},
+      {t:'Configurable Stroke', d:'Stroke selectable between 50mm and 700mm.'},
+      {t:'Multiple Power Options', d:'800W, 1000W and 1200W configurations.'},
+      {t:'Wide Operating Range', d:'-30°C to 70°C for harsh field environments.'},
+      {t:'IPX5 Waterproof', d:'Reliable protection in outdoor and marine-adjacent conditions.'}
+    ],
+    specs:[['Input Voltage','DC 24V / 48V'],['Power Options','800W / 1000W / 1200W'],['Displacement','0.38cc / 0.6cc / 0.88cc'],['Stroke Length','50 – 700 mm'],['Maximum Push Force','3.2 T'],['Retraction Force','2 T'],['Speed Options','10 – 24 mm/s'],['Operating Temperature','-30°C to 70°C'],['Waterproof Rating','IPX5']],
+    applications:['Agricultural Machinery','Mobile & Special Vehicles','Construction & Mining','Marine & Offshore','Industrial Automation'],
+    related:['f500','f200','prof300i']
+  },
+  f500: {
+    name:'Fluid F500', family:'fluid', tag:'Electro-Hydraulic Actuator',
+    short:'The flagship Fluid actuator, rated to 5T top-of-lift force for the heaviest hydraulic duty in the TorqX range.',
+    overview:'The Fluid F500 Series is the highest-capacity model in the Fluid line, purpose-built for heavy-duty lifting where conventional hydraulic cylinders would otherwise be specified — while retaining the compact, self-contained electro-hydraulic format of the rest of the series.',
+    features:[
+      {t:'5T Top-of-Lift Force', d:'The highest force rating in the Fluid Series.'},
+      {t:'3.5T Retraction Force', d:'Strong retraction performance for heavy pull-type loads.'},
+      {t:'Compact Stroke Range', d:'100 – 450mm stroke optimised for high-force, shorter-travel lifting.'},
+      {t:'Multiple Power Options', d:'800W, 1000W and 1200W configurations.'},
+      {t:'Wide Operating Range', d:'-30°C to 70°C rated for harsh industrial sites.'},
+      {t:'IPX5 Waterproof', d:'Reliable sealing for outdoor and heavy-duty environments.'}
+    ],
+    specs:[['Input Voltage','DC 24V / 48V'],['Power Options','800W / 1000W / 1200W'],['Displacement','0.38cc / 0.6cc / 0.88cc'],['Stroke Length','100 – 450 mm'],['Top of Lift Force','5 T'],['Retraction Force','3.5 T'],['Load Speed','6 – 15 mm/s'],['Operating Temperature','-30°C to 70°C'],['Waterproof Rating','IPX5']],
+    applications:['Construction & Mining','Industrial Automation','Material Handling','Mobile & Special Vehicles','Infrastructure Systems'],
+    related:['f320','prof300i','t170']
+  },
+  prof200i: {
+    name:'Fluid Pro F200i', family:'fluid', tag:'Integrated Electro-Hydraulic Actuator',
+    short:'Compact integrated electro-hydraulic actuator delivering up to 50% greater thrust in the same installation space.',
+    overview:'The Fluid Pro F200i Series integrates the hydraulic unit, cylinder, motor, control circuit, and travel switch into a single self-contained design. Its hose-free, zero oil-spill construction enables clean, maintenance-friendly operation with hydraulic self-locking for added safety.',
+    features:[
+      {t:'Integrated Architecture', d:'Hydraulic unit, motor, control circuit and limit switch in one housing.'},
+      {t:'Up to 50% More Thrust', d:'Greater force density than equivalent non-integrated units.'},
+      {t:'Hose-Free Design', d:'Zero oil-spill construction for clean, low-maintenance operation.'},
+      {t:'Hydraulic Self-Locking', d:'Holds position automatically without continuous power draw.'},
+      {t:'Multiple Mounting Options', d:'VF and HF installation methods for flexible integration.'},
+      {t:'IP65 Protection', d:'Aluminium alloy construction rated for harsh outdoor use.'}
+    ],
+    specs:[['Motor Power','350W / 850W'],['Voltage','18V / 24V / 48V / 72V DC'],['Stroke of Push Rod','100 – 900 mm'],['Mounting Distance','263.3 – 1063.3 mm'],['No-Load Speed','11 – 70 mm/s'],['Installation Method','VF / HF'],['Installation Aperture','13 mm']],
+    applications:['Forklifts','Medical Beds','Snow Plows','Agricultural Harvesters','Dumper Trucks'],
+    related:['prof300i','f200','f120']
+  },
+  prof300i: {
+    name:'Fluid Pro F300i', family:'fluid', tag:'Integrated Electro-Hydraulic Actuator',
+    short:'Higher-stroke integrated electro-hydraulic actuator built on the same hose-free, self-locking Pro platform.',
+    overview:'The Fluid Pro F300i Series extends the Pro platform with a longer push-rod stroke for applications needing greater travel without sacrificing the integrated, hose-free design and hydraulic self-locking safety of the Pro range.',
+    features:[
+      {t:'Extended Stroke', d:'Push-rod stroke from 150mm up to 900mm.'},
+      {t:'Integrated Architecture', d:'Hydraulic unit, motor and control circuit in one compact housing.'},
+      {t:'Hose-Free Design', d:'Zero oil-spill construction for clean operation.'},
+      {t:'Hydraulic Self-Locking', d:'Maintains position safely without continuous power.'},
+      {t:'Multiple Mounting Options', d:'VF and HF installation methods.'},
+      {t:'Defined Duty Cycle', d:'Rated for 15% ED continuous operation at full load.'}
+    ],
+    specs:[['Motor Power','350W / 850W'],['Voltage','18V / 24V / 48V / 72V DC'],['Stroke of Push Rod','150 – 900 mm'],['No-Load Speed','7 – 45 mm/s'],['Installation Method','VF / HF'],['Duty Cycle','15% ED']],
+    applications:['Forklifts','Medical Beds','Snow Plows','Agricultural Harvesters','Dumper Trucks'],
+    related:['prof200i','f320','f500']
+  },
+  er: {
+    name:'Elevate ER', family:'elevate', tag:'Heavy-Duty Lift Column',
+    short:'Self-supporting heavy-duty lift columns for exceptional load capacity, long travel range, and high stability.',
+    overview:'The ER Series consists of heavy-duty self-supporting lifting columns designed for applications requiring exceptional load capacity, long travel ranges, and high stability. Equipped with servo motors and CAN bus communication, the series delivers precise, synchronised motion for automated production systems and large-scale industrial equipment.',
+    features:[
+      {t:'Smooth and Precise', d:'Vibration-free vertical movement for consistent positioning performance.'},
+      {t:'Self-Locking', d:'Maintains operational safety and prevents movement during power failures.'},
+      {t:'Long Travel Range', d:'Available travel from 1,500mm up to 15,000mm.'},
+      {t:'High Lateral Moment', d:'Dynamic lateral moment capacities of up to 5,000Nm for excellent rigidity.'},
+      {t:'Servo & CAN Bus', d:'Synchronised motion control across multiple columns.'},
+      {t:'Robust Rectangular Profile', d:'360 × 180mm profile for high side-load resistance.'}
+    ],
+    specs:[['Maximum Profile','360 × 180 mm'],['Maximum Load','100 – 8,000 N'],['Lifting Speed','5 – 300 mm/s'],['Travel Range','1,500 – 15,000 mm'],['Lateral Moment','Up to 5,000 Nm dynamic'],['Motor Option','Servo motor, CAN bus']],
+    applications:['Robotics & Cobots','Material Handling','Automotive Manufacturing','Agricultural Machinery','Industrial Automation'],
+    related:['es','ec','t170']
+  },
+  es: {
+    name:'Elevate ES', family:'elevate', tag:'Lift Column',
+    short:'Self-supporting, height-adjustable lift columns across six frame sizes covering compact to heavy-duty installations.',
+    overview:'The Elevate ES Lifting Column is a compact and rigid linear actuator designed for applications requiring high stability and precise vertical movement. Spanning the ES2 through ES6 sub-series, the platform covers stroke ranges from 100mm to 10,000mm and load capacities up to 8,000N, supporting DC, servo and CAN bus motor configurations.',
+    features:[
+      {t:'Smooth and Precise', d:'Vibration-free vertical movement for consistent positioning.'},
+      {t:'Self-Locking', d:'Prevents unexpected actuator movement during power failures.'},
+      {t:'Six Frame Sizes', d:'ES2 through ES6 sub-series cover compact to heavy-duty applications.'},
+      {t:'Load Capacity to 8,000N', d:'Available across multiple pipe diameters and stroke ranges.'},
+      {t:'Flexible Motor Options', d:'DC motor, servo motor, integrated control, or CAN bus.'},
+      {t:'High Lateral Moment', d:'Dynamic ratings up to 2,000Nm depending on frame size.'}
+    ],
+    specs:[['Maximum Pipe','106 – 270 mm sq.'],['Maximum Load','Up to 8,000 N'],['Lifting Speed','5 – 300 mm/s'],['Stroke Range','100 – 10,000 mm'],['Lateral Moment','Up to 2,000 Nm dynamic'],['Motor Option','DC / servo motor, CAN bus']],
+    applications:['Robotics & Cobots','Material Handling','Automotive Manufacturing','Agricultural Machinery','Medical Equipment'],
+    related:['er','ec','c60']
+  },
+  ec: {
+    name:'Elevate EC', family:'elevate', tag:'Compact Lift Column',
+    short:'Compact two- to four-stage telescopic lift columns optimised for space-saving, high-rigidity vertical positioning.',
+    overview:'The Elevate EC Lifting Column is a compact and rigid linear actuator designed for applications requiring high stability and precise vertical movement in a small installation footprint. The EC2 through EC4 sub-series scale from compact two-stage columns to extended-travel four-stage configurations.',
+    features:[
+      {t:'Smooth and Precise', d:'Vibration-free vertical movement for consistent positioning.'},
+      {t:'Self-Locking', d:'Maintains operational safety during power failures.'},
+      {t:'Compact Footprint', d:'Optimised retracted dimensions for space-saving installations.'},
+      {t:'Load Capacity to 10,000N', d:'Available across the EC3 sub-series for heavier-duty use.'},
+      {t:'CAN Bus & Servo Options', d:'Synchronous control for coordinated multi-column setups.'},
+      {t:'Multiple Pipe Diameters', d:'From 83mm up to 145mm depending on configuration.'}
+    ],
+    specs:[['Maximum Pipe','83 – 145 mm'],['Maximum Load','Up to 10,000 N'],['Lifting Speed','4 – 150 mm/s'],['Stroke Range','50 – 3,000 mm'],['Lateral Moment','Up to 1,500 Nm dynamic'],['Motor Option','12–48V DC / servo, CAN bus']],
+    applications:['Industrial Workstations','Machine Automation','Robotic Platforms','Adjustable Platforms','Packaging Machinery'],
+    related:['es','er','i35']
+  },
+  a90: {
+    name:'Axis A90', family:'axis', tag:'Precision Linear Actuator',
+    short:'Precision single-axis actuator with high transmission efficiency and synchronous multi-actuator operation.',
+    overview:'TorqX Axis A90 Linear Actuator comes with increased load capacity, higher transmission efficiency, and diverse control options. These features position it as a versatile and reliable solution suitable for a wide range of applications, with robust construction and environmental resilience that make it a competitive alternative to conventional hydraulic and pneumatic systems.',
+    features:[
+      {t:'High Load Capacity', d:'Delivers up to 9,000N of force for heavy-duty lifting and positioning.'},
+      {t:'IP67 Protection', d:'Sealed enclosure protects against dust, moisture and water ingress.'},
+      {t:'Synchronous Operation', d:'Supports synchronised multi-actuator movement for coordinated platforms.'},
+      {t:'Low Operating Noise', d:'Rated at 75dB under load for indoor-adjacent installations.'},
+      {t:'Durable Materials', d:'6063 aluminium and 304 stainless steel construction.'},
+      {t:'Wide Temperature Range', d:'Rated from -20°C to 60°C operating environments.'}
+    ],
+    specs:[['Voltage','12V / 24V'],['Max Power','120 W'],['IP Rating','IP67'],['Max Load','9,000 N'],['Min Stroke','50 mm'],['Noise on Load','75 dB'],['Working Duty','2 min work / 18 min rest'],['Material','6063 Aluminium / 304 Stainless Steel'],['Operating Temperature','-20°C to 60°C']],
+    applications:['Agricultural Machinery','Medical Bed Equipment','Outdoor Power Equipment','Industrial Automation','Defense Systems'],
+    related:['i35','t120','c60']
+  },
+  s150: {
+    name:'Solar S150', family:'solar', tag:'Solar Tracking Actuator',
+    short:'High-load 12/24/36 VDC linear actuator delivering up to 15,000 N of thrust, with configurable stroke and speed for solar tracking and outdoor automation.',
+    overview:'The Solar S150 is a high-load electric linear actuator engineered for reliable thrust, precise positioning, and long-term performance in demanding outdoor environments. Available in 12 VDC, 24 VDC, and 36 VDC configurations with customisable stroke lengths from 100mm to 1000mm, it supports multiple speed/force configurations to suit either high-force or high-speed requirements. An adjustable rear mount, optional manual hand-crank override, and mechanical self-locking make it well suited to single- and dual-axis solar tracking, industrial automation, and agricultural machinery.',
+    features:[
+      {t:'High Thrust Capacity', d:'Delivers up to 15,000 N depending on voltage and speed configuration.'},
+      {t:'Multi-Voltage Options', d:'Available in 12 VDC, 24 VDC, and 36 VDC configurations.'},
+      {t:'Configurable Speed Range', d:'Loaded speeds from 1.8 mm/s to 50 mm/s across six configuration codes.'},
+      {t:'IP67 Sealed', d:'Protected against dust and temporary water immersion.'},
+      {t:'Manual Override', d:'Optional hand-crank operation during power outages.'},
+      {t:'Adjustable Rear Mount', d:'±30° rotation for simplified alignment and installation.'}
+    ],
+    specs:[['Max Thrust','Up to 15,000 N (configuration-dependent)'],['Stroke Range','100 mm – 1000 mm'],['Voltage Options','12 VDC / 24 VDC / 36 VDC'],['Loaded Speed','1.8 mm/s – 50 mm/s'],['Protection Rating','IP67'],['Max Duty Cycle','10%'],['Noise Level','< 73 dB'],['Rear Adjustment','±30° rotation'],['Signal Feedback','Hall sensor / potentiometer (optional)'],['Safety Certification','CE']],
+    applications:['Solar Tracking Systems','Industrial Automation','Agricultural Machinery','Lifting Platforms'],
+    related:['s300','s500','a90']
+  },
+  s300: {
+    name:'Solar S300', family:'solar', tag:'Solar Tracking Actuator',
+    short:'Heavy-duty 12/24 VDC tracking actuator delivering up to 30,000 N dynamic load, built for commercial-scale solar tracking and outdoor automation.',
+    overview:'The Solar S300 is a heavy-duty linear actuator purpose-built for solar tracking systems and other demanding outdoor applications requiring high load capacity and long service life. Built with all-metal gears, all-copper nuts, and a trapezoidal screw drive, it delivers up to 30,000 N dynamic load and 110,000 N static load capacity. An IP66 rating, -40°C to +65°C operating range, and 1000-hour salt spray testing make it suited to sustained field operation in harsh outdoor conditions.',
+    features:[
+      {t:'High Dynamic Load', d:'Delivers up to 30,000 N dynamic and 110,000 N static load capacity.'},
+      {t:'All-Metal Drivetrain', d:'All-metal gears and all-copper nuts for continuous field duty.'},
+      {t:'Trapezoidal Screw Drive', d:'Robust mechanism engineered for durability under heavy load.'},
+      {t:'Wide Temperature Range', d:'Rated for continuous operation from -40°C to +65°C.'},
+      {t:'Salt Spray Tested', d:'Tested to withstand 1000 hours of salt spray exposure.'},
+      {t:'Maintenance-Friendly', d:'Dedicated lubrication ports for the screw and gearbox.'}
+    ],
+    specs:[['Max Dynamic Load','30,000 N'],['Max Static Load','110,000 N'],['Stroke Range','100 mm – 1500 mm'],['Motor','160 W permanent magnet DC, 2800 rpm'],['Speed','1.5 mm/s no-load / 0.8 mm/s loaded'],['Protection Rating','IP66'],['Operating Temperature','-40°C to +65°C'],['Noise Level','< 65 dB'],['Service Life','10,000 cycles'],['Salt Spray Test','1000 hours']],
+    applications:['Commercial Solar Tracking','Photovoltaic Installations','Agricultural Automation','Industrial Positioning'],
+    related:['s150','s500','t120']
+  },
+  s500: {
+    name:'Solar S500', family:'solar', tag:'Solar Tracking Actuator',
+    short:'Maximum-capacity 24 VDC tracking actuator delivering up to 50,000 N dynamic load for large-format commercial and utility-scale solar installations.',
+    overview:'The Solar S500 is the highest-capacity model in the Solar Series, engineered for applications requiring exceptionally high load capacity and long-term durability. Featuring copper nuts, metal gears, and a trapezoidal lead screw, it delivers up to 50,000 N dynamic load and 125,000 N static load on a 24 VDC supply. Built-in limit switches, optional Hall/potentiometer feedback, and a rear rotary joint bearing make it suited to the most demanding utility-scale tracking and heavy-duty lifting applications.',
+    features:[
+      {t:'Maximum Load Capacity', d:'Delivers up to 50,000 N dynamic and 125,000 N static load.'},
+      {t:'Copper Nut & Metal Gear Drive', d:'Trapezoidal lead screw engineered for heavy-duty strength.'},
+      {t:'Built-In Limit Switches', d:'Ensures safe operation and prevents over-travel.'},
+      {t:'Optional Position Feedback', d:'Hall sensor or potentiometer feedback available.'},
+      {t:'Rotary Joint Mounting', d:'Rear rotary joint bearing simplifies installation and alignment.'},
+      {t:'Maintenance-Friendly', d:'Dedicated lubrication ports for the screw and gearbox.'}
+    ],
+    specs:[['Max Dynamic Load','50,000 N'],['Max Static Load','125,000 N'],['Stroke Range','100 mm – 800 mm'],['Voltage','24 VDC'],['Speed','1.2 mm/s no-load / 0.8 mm/s loaded'],['Max Current','11 A'],['Max Power','192 W'],['Protection Rating','IP66'],['Max Duty Cycle','10%']],
+    applications:['Utility-Scale Solar Farms','Heavy-Duty Lifting Systems','Industrial Automation','Material Handling'],
+    related:['s300','s150','f500']
+  }
+};
+
+const DATASHEETS = {
+  a90:'datasheets/TorqX-Axis-A90-Datasheet.pdf', c30:'datasheets/TorqX-Comfort-C30-Datasheet.pdf', c60:'datasheets/TorqX-Comfort-C60-Datasheet.pdf',
+  i35:'datasheets/TorqX-Industrial-I35-Datasheet.pdf', i80:'datasheets/TorqX-Industrial-I80-Datasheet.pdf',
+  t120:'datasheets/TorqX-Titan-T120-Datasheet.pdf', t170:'datasheets/TorqX-Titan-T170-Datasheet.pdf',
+  s150:'datasheets/TorqX-Solar-S150-Datasheet.pdf', s300:'datasheets/TorqX-Solar-S300-Datasheet.pdf', s500:'datasheets/TorqX-Solar-S500-Datasheet.pdf',
+  f120:'datasheets/TorqX-Fluid-F120-Datasheet.pdf', f200:'datasheets/TorqX-Fluid-F200-Datasheet.pdf',
+  f320:'datasheets/TorqX-Fluid-F320-Datasheet.pdf', f500:'datasheets/TorqX-Fluid-F500-Datasheet.pdf',
+  prof200i:'datasheets/TorqX-Fluid-ProF200i-Datasheet.pdf', prof300i:'datasheets/TorqX-Fluid-ProF300i-Datasheet.pdf',
+  er:'datasheets/TorqX-Elevate-ER-Datasheet.pdf', es:'datasheets/TorqX-Elevate-ES-Datasheet.pdf', ec:'datasheets/TorqX-Elevate-EC-Datasheet.pdf'
+};
+
+/* ───────────────────────── ROUTER ───────────────────────── */
+const app = document.getElementById('app');
+const crumb = document.getElementById('breadcrumb');
+
+function parseHash(){
+  const h = location.hash.replace(/^#\/?/, '');
+  const parts = h.split('/').filter(Boolean);
+  return parts;
+}
+
+function setBreadcrumb(items){
+  crumb.innerHTML = items.map((it,i)=>{
+    const isLast = i === items.length-1;
+    const sep = i>0 ? '<span class="sep">/</span>' : '';
+    return sep + (isLast ? `<span class="current">${it.label}</span>` : `<a href="${it.href}">${it.label}</a>`);
+  }).join('');
+}
+
+function render(){
+  const parts = parseHash();
+  if(parts.length === 0){
+    renderHome();
+  } else if(parts[0] === 'family' && parts[1] && FAMILIES[parts[1]]){
+    const slug = parts[1];
+    const modelSlug = parts[2];
+    if(modelSlug && MODELS[modelSlug] && MODELS[modelSlug].family === slug){
+      renderModelDetail(slug, modelSlug);
+    } else {
+      renderFamily(slug);
+    }
+  } else {
+    renderHome();
+  }
+  window.scrollTo({top:0, behavior:'instant' in window ? 'instant' : 'auto'});
+}
+
+function renderHome(){
+  setBreadcrumb([{label:'Home', href:'index.html'},{label:'Products', href:'#/'}]);
+  let cards = '';
+  Object.keys(FAMILIES).forEach(slug=>{
+    const f = FAMILIES[slug];
+    const modelCount = f.models.length;
+    cards += `
+    <a href="#/family/${slug}" class="fam-card">
+      <div class="fam-media">
+        <span class="fam-badge">${f.badge}</span>
+        ${familyImage(slug, f.name)}
+      </div>
+      <div class="fam-body">
+        <div class="fam-title">${f.name}</div>
+        <div class="fam-desc">${f.desc}</div>
+        <div class="fam-meta"><span>${modelCount} Model${modelCount>1?'s':''} Available</span></div>
+        <div class="fam-apps"><strong>Applications:</strong> ${f.applications}</div>
+        <span class="fam-cta">Explore Series →</span>
+      </div>
+    </a>`;
+  });
+
+  app.innerHTML = `
+    <div class="page-head">
+      ${ribbonHTML()}
+      <p class="page-tag">Product Range</p>
+      <h1 class="page-h1">Complete Range of Actuator Systems</h1>
+      <p class="page-sub">One manufacturer. Seven product families. Browse by series to find the right actuator or lift column for your application — then drill into individual models for full technical detail.</p>
+    </div>
+    <div class="fam-section">
+      <div class="fam-grid">${cards}</div>
+    </div>
+    <div class="fam-section" style="padding-top:0">
+      ${featureStripHTML(['Robust & Reliable','High Force Performance','Built for Industry'])}
+    </div>
+  `;
+}
+
+function renderFamily(slug){
+  const fam = FAMILIES[slug];
+
+  setBreadcrumb([
+    {label:'Home', href:'index.html'},
+    {label:'Products', href:'#/'},
+    {label:fam.name, href:`#/family/${slug}`}
+  ]);
+
+  const modelCards = fam.models.map(ms=>{
+    const mm = MODELS[ms];
+    return `
+    <a href="#/family/${slug}/${ms}" class="model-card">
+      <div class="model-media">${productImage(ms, slug, mm.name)}</div>
+      <div class="model-body">
+        <div class="model-tag">${mm.tag}</div>
+        <div class="model-title">${mm.name}</div>
+        <div class="model-desc">${mm.short}</div>
+        <span class="model-cta">View Specifications -></span>
+      </div>
+    </a>`;
+  }).join('');
+
+  app.innerHTML = `
+    <div class="page-head">
+      ${ribbonHTML()}
+      <p class="page-tag">${fam.badge}</p>
+      <h1 class="page-h1">${fam.name}</h1>
+      <p class="page-sub">${fam.desc}</p>
+    </div>
+    <div class="fam-layout">
+      <a class="back-link" href="#/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>All Product Families</a>
+      <div class="model-grid">${modelCards}</div>
+    </div>
+  `;
+}
+
+function renderModelDetail(slug, activeModel){
+  const fam = FAMILIES[slug];
+  const m = MODELS[activeModel];
+setBreadcrumb([
+    {label:'Home', href:'index.html'},
+    {label:'Products', href:'#/'},
+    {label:fam.name, href:`#/family/${slug}`},
+    {label:m.name, href:`#/family/${slug}/${activeModel}`}
+  ]);
+
+  const specRows = m.specs.map(([k,v])=>`<tr><td>${k}</td><td>${v}</td></tr>`).join('');
+  const appCards = m.applications.map((a,i)=>appScenarioCard(i,a)).join('');
+  const featCards = (m.features||[]).map((f,i)=>`
+    <div class="feat-card">
+      <div class="feat-icon">${featureIcon(i)}</div>
+      <div class="feat-title">${f.t}</div>
+      <div class="feat-desc">${f.d}</div>
+    </div>`).join('');
+
+  const relatedCards = (m.related||[]).filter(r=>MODELS[r]).map(r=>{
+    const rm = MODELS[r];
+    return `
+    <button class="related-card" data-related="${rm.family}/${r}">
+      <div class="related-icon">${productImage(r, rm.family, rm.name)}</div>
+      <div>
+        <div class="related-name">${rm.name}</div>
+        <div class="related-fam">${FAMILIES[rm.family].name}</div>
+      </div>
+    </button>`;
+  }).join('');
+
+  app.innerHTML = `
+    <div class="page-head">
+      <div>
+        ${ribbonHTML()}
+        <p class="page-tag">${fam.badge} - ${fam.name}</p>
+        <h1 class="page-h1">${m.name}</h1>
+        <p class="page-sub">${m.short}</p>
+      </div>
+</div>
+    <div class="fam-layout">
+      <a class="back-link" href="#/family/${slug}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>All ${fam.name} Models</a>
+      <div class="pd-panel">
+        <div class="pd-top">
+          <div>
+            <div class="pd-gallery-main" id="pdMain">${productImage(activeModel, slug, m.name, true)}</div>
+          </div>
+          <div>
+            <p class="pd-tag">${m.tag}</p>
+            <h2 class="pd-name">${m.name}</h2>
+            <p class="pd-short">${m.overview || m.short}</p>
+            ${strokeTagHTML(m.specs)}
+            <div class="pd-actions">
+              <a class="pd-btn-primary" href="contact.html" style="display:inline-block;text-decoration:none">Request Quote</a>
+              <a class="pd-btn-secondary" href="contact.html" style="display:inline-block;text-decoration:none">Contact Sales</a>
+            </div>
+          </div>
+        </div>
+
+        ${featCards ? `
+        <div class="pd-section">
+          <h3 class="pd-section-h">Key Features</h3>
+          <div class="feat-grid">${featCards}</div>
+        </div>` : ''}
+
+        <div class="pd-section">
+          <h3 class="pd-section-h">Technical Specifications</h3>
+          <table class="spec-table"><tbody>${specRows}</tbody></table>
+        </div>
+
+        <div class="pd-section">
+          <h3 class="pd-section-h">Application Scenarios</h3>
+          <div class="appscn-grid">${appCards}</div>
+        </div>
+
+        ${relatedCards ? `
+        <div class="pd-section">
+          <h3 class="pd-section-h">Related Products</h3>
+          <div class="related-grid">${relatedCards}</div>
+        </div>` : ''}
+      </div>
+    </div>
+  `;
+
+  app.querySelectorAll('[data-related]').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      const [rFam, rModel] = btn.getAttribute('data-related').split('/');
+      location.hash = `#/family/${rFam}/${rModel}`;
+    });
+  });
+}
+function miniIcon(){
+  return '<svg viewBox="0 0 24 24" fill="none" stroke="#163B63" stroke-width="1.6" width="18" height="18"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg>';
+}
+function quoteIcon(){
+  return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="19" height="19"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 9h8M8 13h5"/></svg>';
+}
+function supportIcon(){
+  return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="19" height="19"><path d="M4 19c0-4.4 3.6-8 8-8s8 3.6 8 8"/><circle cx="12" cy="7" r="4"/></svg>';
+}
+function featureIcon(index){
+  const icons = [
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="19" height="19"><path d="M4 14h16"/><path d="M7 10l-3 4 3 4"/><path d="M17 10l3 4-3 4"/></svg>',
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="19" height="19"><rect x="5" y="6" width="14" height="12" rx="2"/><path d="M8 10h8M8 14h5"/></svg>',
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="19" height="19"><path d="M12 3v18M5 8h14M7 16h10"/></svg>',
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="19" height="19"><path d="M12 3l8 4v5c0 5-3.4 8.1-8 9-4.6-.9-8-4-8-9V7l8-4z"/></svg>',
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="19" height="19"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg>',
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="19" height="19"><path d="M4 17l6-10 4 6 2-3 4 7H4z"/></svg>'
+  ];
+  return icons[index % icons.length];
+}
+
+window.addEventListener('hashchange', render);
+render();
+
+// Sticky nav shadow
+const navEl = document.querySelector('nav');
+const onScroll = () => { navEl.classList.toggle('scrolled', window.scrollY > 12); };
+window.addEventListener('scroll', onScroll, {passive:true});
+onScroll();
+</script>
+</body>
+</html>
